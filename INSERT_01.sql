@@ -83,7 +83,31 @@ WHERE
 	*/
 	`name` IS not NULL;
 	
+UPDATE
+	student_mst
+SET
+	score = 80
+WHERE 
+	`name`= '박준현';
+	
+	
+	
+UPDATE
+	student_mst
+SET
+	score = 100
+WHERE 
+	student_year = 2 
+AND score BETWEEN 80 AND 90;
 
+
+DELETE
+FROM
+	student_mst
+WHERE
+	score < 80;
+
+	
 
 	
 	
